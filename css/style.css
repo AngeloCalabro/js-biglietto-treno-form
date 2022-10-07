@@ -1,0 +1,33 @@
+.debug {
+    border: 1px solid black;
+    min-height: 20px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/johannes-hofmann-PM5a_R83-YQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.my-container-little {
+    width: max-content;
+    height: max-content;
+    background-color: rgba(217, 217, 217, 0.8);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+}
+
+.my-container {
+    width: 637.5px;
+    height: 225px;
+    background-color: rgba(217, 217, 217, 0.8);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
+}
+
+.my-text-end {
+    text-align: end;
+}

@@ -19,22 +19,55 @@
 </head>
 
 <body>
-    <div class="row justify-content-center mt-3">
-        <div class="col-2 text-center">
-            <label for="exampleFormControlInput1" class="form-label">km da percorrere</label>
-            <input type="number" class="form-control" id="km" value="0">
+    <div class="d-flex justify-content-center">
+        <div class="my-container-little rounded-2">
+            <div class="row justify-content-center">
+                <div class="col-2 text-center m-3 w-auto">
+                    <label for="exampleFormControlInput1" class="form-label">km da percorrere</label>
+                    <input type="number" class="form-control" id="km" value="0">
+                </div>
+                <div class="col-2 text-center m-3 w-auto">
+                    <label for="exampleFormControlInput1" class="form-label">Età dell'utente</label>
+                    <input type="number" class="form-control" id="age" value="0">
+                </div>
+            </div>
+            <div class="row justify-content-center my-3">
+                <!-- AGGIUNGERE RADIO BUTTON SCELTA ANNI -->
+            </div>
+            <div class="row justify-content-center my-3">
+                <button type="submit" id="calcola" class="w-25">Calcola</button>
+            </div>
         </div>
-        <div class="col-2 text-center">
-            <label for="exampleFormControlInput1" class="form-label">Età dell'utente</label>
-            <input type="number" class="form-control" id="age" value="0">
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="ticket-train my-container rounded-5">
+            <div class="my-text-end m-4">
+                <span class="bg-black text-white rounded-pill p-2">
+                    <span>Data</span>
+                    <span id="date_add" class="fs-5"></span>
+                </span>
+            </div>
+            <div class=" m-4">
+                <div>
+                    <span>Totale da percorrere:</span>
+                    <span id="km_around" class="debug fw-bold fs-4 p-1">000</span>
+                    <span class="fw-bold">km</span>
+                </div>
+            </div>
+            <div class="my-text-end m-4">
+                <div>
+                    <div id="price_list" class="text-danger p-1 text-decoration-line-through"></div>
+                    <span id="add_discount" class="fst-italic"></span>
+                    <span id="total_price" class="bg-black text-white fs-3 rounded-2 p-2">
+                        Tot: &euro; 0,00
+                    </span>
+                </div>
+            </div>
+            <div></div>
         </div>
     </div>
-    <div class="row justify-content-center mt-3">
-        <!-- AGGIUNGERE RADIO BUTTON SCELTA ANNI -->
-    </div>
-    <div class="row justify-content-center mt-3">
-        <button type="button" id="calcola" class="w-25">Calcola</button>
-    </div>
+
     <!-- SCRIPT -->
     <script src="./js/script.js"></script>
 </body>
