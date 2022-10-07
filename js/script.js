@@ -24,6 +24,15 @@ const calcTicket = function () {
         alert('Hai sbagliato, inserisci un numero')
     };
 
+    if (km == 0) {
+        alert('Inserisci il numero di km che vuoi percorrere')
+    };
+
+    if (age < 14 && age > 0) {
+        alert('Ricorda che non puoi viaggiare da solo, fatti sempre accompagnare da un adulto')
+    };
+
+
     const prezzoKm = 0.21;
     console.log(prezzoKm + ` prezzo al km`);
 
