@@ -39,7 +39,7 @@ const calcTicket = function () {
         console.log('sconto 20%')
         const prezzoScontato_20 = kmEuroPercorsi - sconto_20
         console.log(new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(prezzoScontato_20));
-        document.getElementById('price_list').innerHTML += `Prezzo di listino: ` + kmEuroPercorsi.toFixed(2) + ` &euro;`;
+        document.getElementById('price_list').innerHTML = `Prezzo di listino: ` + kmEuroPercorsi.toFixed(2) + ` &euro;`;
         document.getElementById('add_discount').innerHTML = `Ti è stato applicato uno sconto del 20% dal listino`;
         document.getElementById('total_price').innerHTML = `Tot: ` + new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(prezzoScontato_20);
 
@@ -48,7 +48,7 @@ const calcTicket = function () {
         console.log('sconto 40%')
         const prezzoScontato_40 = kmEuroPercorsi - sconto_40
         console.log(new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(prezzoScontato_40));
-        document.getElementById('price_list').innerHTML += `Prezzo di listino: ` + kmEuroPercorsi.toFixed(2) + ` &euro;`;
+        document.getElementById('price_list').innerHTML = `Prezzo di listino: ` + kmEuroPercorsi.toFixed(2) + ` &euro;`;
         document.getElementById('add_discount').innerHTML = `Ti è stato applicato uno sconto del 40% dal listino`;
         document.getElementById('total_price').innerHTML = `Tot: ` + new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(prezzoScontato_40);
 
