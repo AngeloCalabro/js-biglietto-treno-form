@@ -36,7 +36,7 @@
                 <!-- Possibilità di AGGIUNGERE RADIO BUTTON / range età -->
             </div>
             <div class="row justify-content-center my-3">
-                <button type="button" id="calcola" class="w-25 rounded-3">Calcola</button>
+                <button type="button" id="calcola" class="w-25 rounded-3 my-bg-blue text-white">Calcola</button>
             </div>
         </div>
     </div>
@@ -45,22 +45,25 @@
     <div class="d-flex justify-content-center">
         <div class="my-container rounded-5">
             <div class="d-flex justify-content-between">
-                <h1 class="m-3">Boolean Train Ticket</h1>
-                <div id="date_add" class="m-3 bg-black text-white fs-5 rounded-pill p-2">Data &nbsp;</div>
+                <h1 class="fw-bolder m-3 textGradient">Boolean Train Ticket</h1>
+                <div class="m-3 my-bg-blue text-white  rounded-3 p-2">
+                    <span>Data &nbsp;</span>
+                    <span id="date_add" class="fs-5"></span>
+                </div>
             </div>
-            <div class="d-flex justify-content-center fw-bold">Preventivo:</div>
+            <div class="d-flex justify-content-center fw-bold my-text-blue">Preventivo:</div>
             <div class="d-flex justify-content-between m-4">
-                <div>
+                <div class="my-text-blue">
                     <span>Totale da percorrere:</span>
                     <span id="km_around" class="debug fw-bold fs-4 p-1">0</span>
                     <span class="fw-bold">km</span>
                 </div>
                 <div id="price_list" class="text-danger fw-bold p-1 text-decoration-line-through"></div>
             </div>
-            <div class="my-text-end m-4">
+            <div class="my-text-end m-3">
                 <div>
                     <span id="add_discount" class="fst-italic"></span>
-                    <span id="total_price" class="bg-black text-white fs-3 rounded-2 p-2">
+                    <span id="total_price" class="my-bg-blue text-white fs-3 rounded-2 p-2">
                         Tot: 0,00 &euro;
                     </span>
                 </div>

@@ -28,7 +28,11 @@ const calcTicket = function () {
         alert('Inserisci il numero di km che vuoi percorrere')
     };
 
-    if (age < 14 && age > 0) {
+    if (age == 0) {
+        alert("Inserisci l'età del passeggero")
+    };
+
+    if (age < 14 && age != 0) {
         alert('Ricorda che non puoi viaggiare da solo, fatti sempre accompagnare da un adulto')
     };
 
@@ -43,7 +47,7 @@ const calcTicket = function () {
     const discount_20 = 0.20;
     const discount_40 = 0.40;
 
-    if (age < under_18 && age > 0) {
+    if (age < under_18 && age != 0) {
         const sconto_20 = kmEuroPercorsi * discount_20;
         console.log('sconto 20%')
         const prezzoScontato_20 = kmEuroPercorsi - sconto_20
