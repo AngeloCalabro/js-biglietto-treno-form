@@ -19,12 +19,22 @@
 </head>
 
 <body>
-    <form>
-        <input type="number" id="km" value="0">
-        <input type="number" id="age" value="0">
-        <button id="calcola">Calcola</button>
-    </form>
-
+    <div class="row justify-content-center mt-3">
+        <div class="col-2 text-center">
+            <label for="exampleFormControlInput1" class="form-label">km da percorrere</label>
+            <input type="number" class="form-control" id="km" value="0">
+        </div>
+        <div class="col-2 text-center">
+            <label for="exampleFormControlInput1" class="form-label">Età dell'utente</label>
+            <input type="number" class="form-control" id="age" value="0">
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <!-- AGGIUNGERE RADIO BUTTON SCELTA ANNI -->
+    </div>
+    <div class="row justify-content-center mt-3">
+        <button type="button" id="calcola" class="w-25">Calcola</button>
+    </div>
     <!-- SCRIPT -->
     <script src="./js/script.js"></script>
 </body>
