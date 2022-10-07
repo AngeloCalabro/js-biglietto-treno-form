@@ -21,7 +21,7 @@ const calcTicket = function () {
     document.getElementById('km_around').innerHTML = km;
 
     if (isNaN(km) || isNaN(age)) {
-        alert('Hai sbagliato, metti un numero')
+        alert('Hai sbagliato, inserisci un numero')
     };
 
     const prezzoKm = 0.21;
@@ -29,12 +29,12 @@ const calcTicket = function () {
 
     const kmEuroPercorsi = parseFloat(prezzoKm * km);
 
-    const minorenne = 18;
+    const under_18 = 18;
     const over_65 = 65;
     const discount_20 = 0.20;
     const discount_40 = 0.40;
 
-    if (age < minorenne) {
+    if (age < under_18 && age > 0) {
         const sconto_20 = kmEuroPercorsi * discount_20;
         console.log('sconto 20%')
         const prezzoScontato_20 = kmEuroPercorsi - sconto_20
