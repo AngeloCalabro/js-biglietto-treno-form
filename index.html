@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <!-- FORM FAI DA ME DATI -->
     <div class="d-flex justify-content-center">
         <div class="my-container-little rounded-2">
             <div class="row justify-content-center">
@@ -32,35 +33,35 @@
                 </div>
             </div>
             <div class="row justify-content-center my-3">
-                <!-- AGGIUNGERE RADIO BUTTON SCELTA ANNI -->
+                <!-- Possibilità di AGGIUNGERE RADIO BUTTON / range età -->
             </div>
             <div class="row justify-content-center my-3">
-                <button type="submit" id="calcola" class="w-25">Calcola</button>
+                <button type="submit" id="calcola" class="w-25 rounded-3">Calcola</button>
             </div>
         </div>
     </div>
 
+    <!-- BIGLIETTO TRENO -->
     <div class="d-flex justify-content-center">
-        <div class="ticket-train my-container rounded-5">
-            <div class="my-text-end m-4">
-                <span class="bg-black text-white rounded-pill p-2">
-                    <span>Data</span>
-                    <span id="date_add" class="fs-5"></span>
-                </span>
+        <div class="my-container rounded-5">
+            <div class="d-flex justify-content-between">
+                <h1 class="m-3">Boolean Train Ticket</h1>
+                <div id="date_add" class="m-3 bg-black text-white fs-5 rounded-pill p-2">Data &nbsp;</div>
             </div>
-            <div class=" m-4">
+            <div class="d-flex justify-content-between m-4">
                 <div>
                     <span>Totale da percorrere:</span>
                     <span id="km_around" class="debug fw-bold fs-4 p-1">000</span>
                     <span class="fw-bold">km</span>
                 </div>
+                <div id="price_list" class="text-danger p-1 text-decoration-line-through"></div>
+
             </div>
             <div class="my-text-end m-4">
                 <div>
-                    <div id="price_list" class="text-danger p-1 text-decoration-line-through"></div>
                     <span id="add_discount" class="fst-italic"></span>
                     <span id="total_price" class="bg-black text-white fs-3 rounded-2 p-2">
-                        Tot: &euro; 0,00
+                        Tot: 0,00 &euro;
                     </span>
                 </div>
             </div>

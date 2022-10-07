@@ -7,7 +7,7 @@ aaaa = data.getFullYear();
 let writeDate = gg + mm + aaaa;
 
 console.log(writeDate)
-document.getElementById('date_add').innerHTML = writeDate;
+document.getElementById('date_add').innerHTML += writeDate;
 
 // FORM CON FUNZIONE
 const btn = document.getElementById('calcola');
@@ -55,13 +55,12 @@ const calcTicket = function () {
     } else {
         console.log('no sconto')
         console.log(new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(kmEuroPercorsi));
-        document.getElementById('add_discount').innerHTML = `Buon Viaggio ! `;
         document.getElementById('total_price').innerHTML = `Tot: ` + new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(kmEuroPercorsi);
 
     }
 
 
-    event.preventDefault()
+    //event.preventDefault()
 }
 
 btn.addEventListener('click', calcTicket);
