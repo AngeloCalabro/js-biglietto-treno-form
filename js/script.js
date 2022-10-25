@@ -5,9 +5,9 @@ gg = data.getDate() + "/";
 mm = data.getMonth() + 1 + "/";
 aaaa = data.getFullYear();
 let writeDate = gg + mm + aaaa;
+console.log(writeDate);
 
-console.log(writeDate)
-document.getElementById('date_add').innerHTML += writeDate;
+document.getElementById('date_add').innerHTML = writeDate;
 
 // FORM CON FUNZIONE
 const btn = document.getElementById('calcola');
@@ -15,6 +15,9 @@ const btn = document.getElementById('calcola');
 const calcTicket = function () {
     let km = parseInt(document.getElementById('km').value);
     let age = parseInt(document.getElementById('age').value);
+
+    km.innerHTML = 0;
+    age.innerHTML = 0;
 
     console.log(km + ' km da percorre', '/', age + ' età cliente');
 
@@ -36,7 +39,6 @@ const calcTicket = function () {
         alert('Ricorda che non puoi viaggiare da solo, fatti sempre accompagnare da un adulto')
     };
 
-
     const prezzoKm = 0.21;
     console.log(prezzoKm + ` prezzo al km`);
 
@@ -55,7 +57,6 @@ const calcTicket = function () {
         document.getElementById('price_list').innerHTML = `Prezzo di listino: ` + kmEuroPercorsi.toFixed(2) + ` &euro;`;
         document.getElementById('add_discount').innerHTML = `Ti è stato applicato uno sconto del 20% dal listino`;
         document.getElementById('total_price').innerHTML = `Tot: ` + new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(prezzoScontato_20);
-
     } else if (age >= over_65) {
         const sconto_40 = kmEuroPercorsi * discount_40;
         console.log('sconto 40%')
@@ -64,16 +65,13 @@ const calcTicket = function () {
         document.getElementById('price_list').innerHTML = `Prezzo di listino: ` + kmEuroPercorsi.toFixed(2) + ` &euro;`;
         document.getElementById('add_discount').innerHTML = `Ti è stato applicato uno sconto del 40% dal listino`;
         document.getElementById('total_price').innerHTML = `Tot: ` + new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(prezzoScontato_40);
-
     } else {
         console.log('no sconto')
         console.log(new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(kmEuroPercorsi));
         document.getElementById('total_price').innerHTML = `Tot: ` + new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(kmEuroPercorsi);
-
     }
 
-
     //event.preventDefault()
-}
+};
 
 btn.addEventListener('click', calcTicket);
